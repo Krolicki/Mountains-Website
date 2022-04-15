@@ -10,6 +10,10 @@
     --pink: #df1178;
 }
 
+body, html{
+    overflow-x: hidden;
+}
+
 @media only screen and (max-width: 850px){
     .menu{
         display: block !important;
@@ -66,7 +70,7 @@
 .navlinks{
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 5vmin;
 }
 
 .navlinks li{
@@ -126,4 +130,91 @@ a{
     background: #df1178;
     border-radius: 10px;
     color:var(--color);
+}
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 5vmin;
+    color: #484646;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.row .col img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.last .row{
+    margin-top: 50px;
+
+}
+
+h4{
+    font-size: 4vmin;
+    color: #484646;
+    margin: 20px auto;
+}
+
+p{
+    color: #5f5f5f;
+    padding: 0px 20px;
+}
+
+.last .more{
+    margin-top: 30px;
+}
+
+.midsection{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.midcontent{
+    display: flex;
+    width: 60%;
+    padding: 50px;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color);
+}
+
+.midcontent h1{
+    font-size: 7vmin;
+}
+
+.midcontent .line{
+    margin-bottom: 50px;
+}
+
+.midcontent p{
+    color:rgb(242, 242, 242);
+    font-size: 3vmin;
+}
+
+.midcontent .more{
+    margin-top: 50px;
 }
