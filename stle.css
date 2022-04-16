@@ -12,6 +12,7 @@
 
 body, html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 850px){
@@ -43,8 +44,27 @@ body, html{
     .navlinks li{
         margin: 30px auto !important;
     }
-
-}
+    .row{
+        flex-direction: column;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    .midcontent{
+        width: 100% !important;
+        text-align: center;
+    }
+    .gallery{
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery img{
+        width: 100%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}/* end of mobile */
 
 .menu{
     position: absolute;
@@ -275,4 +295,22 @@ p{
 
 .footer img{
     max-width: 70px;
+}
+
+img{
+    transition: transform .3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.more:hover{
+    background: var(--color);
+    color: var(--pink);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+}
+
+.navlinks:hover{
+    cursor: pointer;
 }
