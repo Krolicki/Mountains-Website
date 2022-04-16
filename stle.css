@@ -218,3 +218,61 @@ p{
 .midcontent .more{
     margin-top: 50px;
 }
+
+.trips .gallery{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100%;
+    align-items: center;
+}
+
+.infocol{
+    width: 40%
+}
+
+.infocol .line{
+    margin-left: 0;
+}
+
+.infocol p{
+    padding: 0;
+    margin: 30px auto;
+}
+
+.infocol .more{
+    margin-left: -70%;
+}
+
+.imgcol{
+    width: 60%;
+}
+
+.infocol h1{
+   font-size: 7vmin;
+   color: #49787b; 
+}
+
+.gallery img{
+    max-width: 250px !important;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #3b3b3b;
+    text-align: center;
+}
+
+.footer p{
+    color: var(--color);
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+.footer img{
+    max-width: 70px;
+}
