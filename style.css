@@ -359,6 +359,7 @@ img:hover{
    opacity: 0;
    pointer-events: none;
    transition: all 0.3s;
+   z-index: 1;
 }
 
 .topimg{
@@ -416,4 +417,44 @@ img:hover{
     font-size: 7vmin;
     color: #49787b;
     margin: 0px auto; 
+}
+
+.cookie{
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    width: 100%;
+    background: #484646e3;
+    padding: 20px;
+    color: var(--color);
+    font-size: 1.5vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    transition: bottom 1s ease-out;
+}
+
+.cookie h1{
+    font-weight: lighter;
+    margin-right: 20px;
+}
+
+.cookie .acceptCookie{
+    padding: 10px 20px;
+    background: var(--pink);
+    border: none;
+    border-radius: 5px;
+    color: var(--color);
+    cursor: pointer;
+    font-size: 2.5vmin;
+}
+
+.cookie.hide{
+    bottom: -80px;
+    transition: bottom 1s ease-out;
+}
+
+.cookie.add{
+    display: flex;
 }
