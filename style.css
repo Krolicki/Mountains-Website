@@ -75,6 +75,13 @@ body, html{
     .footer{
         padding: 10px;
     }
+    .post .col-img{
+        margin: 20px 0px !important;
+        width: 100% !important;
+    }
+    .post .col-text{
+        width: 100% !important;
+    }
 }/* end of mobile */
 
 img {
@@ -458,3 +465,36 @@ img:hover{
 .cookie.add{
     display: flex;
 }
+
+.post{
+    display: flex;
+    justify-content: space-between;
+
+}
+.post .col-text{
+    padding: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    width: 60%;
+    margin: 0;
+}
+.post .col-text h4{
+    margin: 10px 0px;
+}
+.post .col-text p{
+    margin: 10px 0px 20px 0px;
+    padding: 0px;
+}
+
+.post .col-img{
+    display: flex;
+    width: 40%;
+    margin: 0;
+    justify-content: center;
+}
+.post .col-img img{
+    width: 100%;
+}
+
